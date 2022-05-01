@@ -4,6 +4,8 @@
 # - https://github.com/crazy-max/ghaction-github-pages#inputs
 # - https://sli.dev/guide/hosting.html#base-path
 # - https://github.com/peaceiris/actions-gh-pages
+# - https://vitejs.dev/guide/static-deploy.html#github-pages
+# - https://vitejs.dev/guide/build.html#public-base-path
 name: Deploy website
 
 on: push
@@ -33,7 +35,7 @@ jobs:
           run_install: true
 
       - name: Build
-        run: pnpm build
+        run: pnpm build -- --base=/google-drive-download-link-generator/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
