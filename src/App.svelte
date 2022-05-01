@@ -29,7 +29,7 @@
             type="text"
             id="url"
             class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-            placeholder="Enter email"
+            placeholder="https://drive.google.com/file/d/<ID>/view?usp=sharing"
             required
             bind:value={url}
           />
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <button type="submit"> Sign In </button>
+      <button type="submit">Generate</button>
     </form>
 
     {#if downloadUrl}
