@@ -15,7 +15,7 @@
   $: downloadClasses =
     downloadUrl === undefined
       ? "text-gray-400 border-gray-400 bg-gray-50"
-      : "text-green-700 border-green-700 bg-green-50";
+      : "text-cyan-700 border-cyan-700 bg-cyan-50";
 </script>
 
 <!-- https://devdojo.com/tails -->

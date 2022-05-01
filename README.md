@@ -8,6 +8,7 @@
 - [Add Tailwind CSS to Svelte](https://github.com/svelte-add/tailwindcss).
 - [Creating a Simple Form with Svelte](https://egghead.io/lessons/svelte-creating-a-simple-form-with-svelte) tutorial by Andrew Smith.
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms).
+- [SendStack](https://getsendstack.com/) website.
 
 ## Notes
 
