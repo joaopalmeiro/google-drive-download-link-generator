@@ -3,12 +3,14 @@
   let downloadUrl;
 
   const onSubmit = () => {
-    console.log({ url });
+    // https://dmitripavlutin.com/parse-url-javascript/
+    const id = new URL(url).pathname.split("/")[3];
 
-    downloadUrl = "Hello, World!";
+    downloadUrl = `https://drive.google.com/uc?export=download&id=${id}`;
   };
 </script>
 
+<!-- https://hypercolor.dev/ -->
 <main>
   <!-- https://tailwindcss.com/docs/height#viewport-height -->
   <!-- https://stackoverflow.com/questions/55056513/vertical-align-with-tailwind-css-across-full-screen-div -->
@@ -22,12 +24,17 @@
       <!-- https://tailwindcss.com/docs/screen-readers -->
       <!-- https://tailwindcss.com/docs/top-right-bottom-left -->
       <!-- https://egghead.io/lessons/svelte-creating-a-simple-form-with-svelte -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url -->
+      <!-- https://regex101.com/ https://regex101.com/r/ZQbU2n/1 -->
+      <!-- https://stackoverflow.com/questions/23224590/regex-to-modify-google-drive-shared-file-url -->
       <div>
-        <label for="url" class="sr-only">Email</label>
+        <label for="url" class="sr-only">Google Drive link</label>
         <div class="relative">
           <input
-            type="text"
+            type="url"
+            name="url"
             id="url"
+            pattern="https://drive\.google\.com/file/d/.*?/view\?usp=sharing"
             class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
             placeholder="https://drive.google.com/file/d/<ID>/view?usp=sharing"
             required
@@ -53,7 +60,10 @@
         </div>
       </div>
 
-      <button type="submit">Generate</button>
+      <!-- https://tailwindcss.com/docs/hover-focus-and-other-states -->
+      <button type="submit" class="bg-sendstack-one hover:bg-sendstack-two"
+        >Generate</button
+      >
     </form>
 
     {#if downloadUrl}
