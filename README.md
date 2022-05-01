@@ -14,3 +14,4 @@
 - `pnpm tailwindcss init -p`.
 - `npx svelte-add@latest tailwindcss`.
 - `pnpm install -D tailwindcss postcss autoprefixer`.
+- `pnpm install -D svelte-copy`.

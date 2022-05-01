@@ -6,6 +6,7 @@ specifiers:
   autoprefixer: ^10.4.5
   postcss: ^8.4.13
   svelte: ^3.48.0
+  svelte-copy: ^1.2.2
   tailwindcss: ^3.0.24
   vite: ^2.9.6
 
@@ -15,6 +16,7 @@ devDependencies:
   autoprefixer: 10.4.5_postcss@8.4.13
   postcss: 8.4.13
   svelte: 3.48.0
+  svelte-copy: 1.2.2
   tailwindcss: 3.0.24
   vite: 2.9.6
 
@@ -726,6 +728,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /svelte-copy/1.2.2:
+    resolution: {integrity: sha512-VvJuFwhMInVOcPrhrJS8gXC2kbSFzTVrMyq5kaMSMb4N51xN7yX7cNPu0WqxIf3jifeeT3lHKjvtIQy1lfyfSA==}
     dev: true
 
   /svelte-hmr/0.14.11_svelte@3.48.0:

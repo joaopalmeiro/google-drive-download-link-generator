@@ -11,6 +11,11 @@ module.exports = {
         "sendstack-two":
           "radial-gradient(81.58% 81.58% at 50.39% 18.42%, #cff5ff 0, #70e0ff 100%)",
       },
+      colors: {
+        // Source: SendStack (https://getsendstack.com/)
+        "sendstack-onyx": "#09181c",
+        "sendstack-gemstone": "#25363a",
+      },
     },
   },
   plugins: [
