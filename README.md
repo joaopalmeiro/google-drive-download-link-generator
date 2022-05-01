@@ -16,3 +16,4 @@
 - `npx svelte-add@latest tailwindcss`.
 - `pnpm install -D tailwindcss postcss autoprefixer`.
 - `pnpm install -D svelte-copy`.
+- [GitHub Actions: Control permissions for GITHUB_TOKEN](https://github.blog/changelog/2021-04-20-github-actions-control-permissions-for-github_token/) blog post.
