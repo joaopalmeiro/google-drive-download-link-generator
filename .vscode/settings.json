@@ -1,0 +1,12 @@
+{
+  // For ESLint
+  // https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/INTEGRATIONS.md#visual-studio-code
+  "eslint.validate": ["javascript", "svelte"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false
+  },
+  // Svelte for VS Code
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
+}
