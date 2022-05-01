@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy pages
+      - name: Deploy website
         uses: crazy-max/ghaction-github-pages@v2
         with:
           build_dir: dist
