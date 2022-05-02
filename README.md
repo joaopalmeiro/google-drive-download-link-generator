@@ -9,6 +9,7 @@
 - [Creating a Simple Form with Svelte](https://egghead.io/lessons/svelte-creating-a-simple-form-with-svelte) tutorial by Andrew Smith.
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms).
 - [SendStack](https://getsendstack.com/) website.
+- [Designer](https://trydesigner.com/) website.
 
 ## Notes
 

@@ -12,24 +12,27 @@
   };
 
   // https://svelte.dev/repl/ca01d7704d2e411bbe9a9911de6ea8bb?version=3.4.4
+  // "text-cyan-700 border-cyan-700 bg-cyan-50"
   $: downloadClasses =
     downloadUrl === undefined
       ? "text-gray-400 border-gray-400 bg-gray-50"
-      : "text-cyan-700 border-cyan-700 bg-cyan-50";
+      : "text-sendstack-onyx border-sendstack-onyx bg-gray-100";
 </script>
 
 <!-- https://devdojo.com/tails -->
 <!-- https://hypercolor.dev/ -->
 <!-- https://tailwind-elements.com/quick-start/ -->
 <!-- https://delba.dev/ -->
-<div class="min-h-screen antialiased flex flex-col items-center">
+<div
+  class="min-h-screen antialiased flex flex-col items-center px-9 bg-gradient-to-r from-rose-100/50 to-teal-100/50"
+>
   <!-- https://tailwindcss.com/docs/height#viewport-height -->
   <!-- https://stackoverflow.com/questions/55056513/vertical-align-with-tailwind-css-across-full-screen-div -->
   <!-- https://tailwindcss.com/docs/max-width -->
   <!-- https://tailwindcss.com/docs/letter-spacing#customizing-your-theme -->
-  <main class="max-w-screen-sm w-full px-4 my-auto text-center">
+  <main class="max-w-screen-sm w-full p-9 my-auto bg-gray-50 rounded-3xl">
     <!-- https://tailwindcss.com/docs/installation -->
-    <h1 class="text-sendstack-onyx text-5xl tracking-tight font-bold">
+    <h1 class="text-sendstack-onyx text-xl tracking-tight font-bold">
       Google Drive download link generator
     </h1>
 
@@ -37,7 +40,7 @@
     <!-- https://tailwindcss.com/docs/gap -->
     <form
       on:submit|preventDefault={onSubmit}
-      class="flex flex-row items-center gap-x-4 mt-8"
+      class="flex flex-row items-center gap-x-4 mt-6"
     >
       <!-- https://www.hyperui.dev/components/inputs -->
       <!-- https://www.hyperui.dev/components/forms -->
@@ -94,7 +97,7 @@
       >
     </form>
 
-    <div class="flex flex-row items-center justify-between gap-x-4 mt-4">
+    <div class="flex flex-row items-center gap-x-4 mt-4">
       <!-- https://www.hyperui.dev/components/alerts -->
       <!-- https://tailwindcss.com/docs/text-overflow -->
       <!-- https://tailwindcss.com/docs/overflow -->
